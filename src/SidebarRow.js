@@ -1,9 +1,16 @@
 import React from "react";
 import "./SidebarRow.css";
+import { useHistory } from "react-router-dom";
 
-function SidebarRow({ Icon, title }) {
+function SidebarRow({ Icon, title, redirect, url }) {
+  const history = useHistory();
   return (
-    <div className="sidebarRow">
+    <div
+      onClick={(e) => {
+        redirect ? (window.location.href = url) : history.push(`/${title}`);
+      }}
+      className="sidebarRow"
+    >
       <Icon />
       <h4>{title}</h4>
     </div>

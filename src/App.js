@@ -12,7 +12,7 @@ function App() {
       <div className="app">
         <Header />
         <Switch>
-          <Route path="/shop">
+          <Route path="/store">
             <Shop />
           </Route>
           <Route path="/Gallery">

@@ -18,13 +18,12 @@ function LandingContent() {
         <div className="landingContent__leftContent">
           <h2>Discover talented new artists</h2>
           <p>Browse the Gallery</p>
-
+          <Button className="landingContent__btn">Go</Button>
           <img
             className="landingContent__galleryImage"
             src="https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/120202384_389707365370521_5389801171743883244_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=109&_nc_ohc=fl9Re9C1z1YAX9w1EIJ&oh=05fb2a86f1a327176c5a48645f68675d&oe=5FA0F9B0"
             alt="anime art"
           />
-          <Button className="landingContent__btn">Go</Button>
         </div>
       </div>
       {/* right content*/}

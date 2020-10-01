@@ -8,7 +8,7 @@ function InstagramTab() {
       <h3 className="instagramTab__title">Live Feed</h3>
       <InstagramEmbed
         url="https://www.instagram.com/p/CFSgbfYnAmO/"
-        maxWidth={700}
+        maxWidth={320}
         hideCaption={false}
         containerTagName="div"
         protocol=""

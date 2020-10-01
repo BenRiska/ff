@@ -1,0 +1,14 @@
+.shop {
+  display: flex;
+}
+
+.shop__items {
+  flex: 1;
+}
+
+.shop__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}

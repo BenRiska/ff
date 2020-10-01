@@ -1,0 +1,36 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background-color: white;
+}
+
+.item__info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__info > h2 {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.item__image {
+  width: 100%;
+  object-fit: contain;
+  max-width: 300px;
+}
+
+.item__btn {
+  background-color: #f44336 !important;
+  border: none !important;
+  padding: 5px !important;
+  color: white !important;
+  font-weight: 900 !important;
+}
+
+.item__btn:hover {
+  background-color: #e62416 !important;
+}
