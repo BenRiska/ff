@@ -1,0 +1,9 @@
+.instagramTab {
+  flex: 0;
+}
+
+.instagramTab__title {
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 400;
+}

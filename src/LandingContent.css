@@ -1,0 +1,67 @@
+.landingContent {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.landingContent__left {
+  flex: 0.6;
+  padding: 10px;
+}
+
+.landingContent__leftContent {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.landingContent__galleryImage {
+  object-fit: contain;
+  max-height: 500px;
+  display: block;
+  border-radius: 20px;
+}
+
+.landingContent__leftContent > p,
+.landingContent__rightContent > p {
+  color: darkgray;
+  padding: 10px 0;
+}
+
+.landingContent__right {
+  flex: 0.4;
+  padding: 10px;
+}
+
+.landingContent__rightContent {
+  background-color: white;
+  padding: 20px;
+}
+
+.landingContent__bannerTitle {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.landingContent__banner {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 20px;
+  margin: 10px 0;
+  object-fit: contain;
+}
+
+.landingContent__btn {
+  background-color: #f44336 !important;
+  border: none !important;
+  padding: 5px !important;
+  color: white !important;
+  font-weight: 900 !important;
+  margin-top: 20px !important;
+}
+
+.landingContent__btn:hover {
+  background-color: #e62416 !important;
+}
