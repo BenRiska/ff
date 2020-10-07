@@ -14,6 +14,7 @@ function Header() {
   const history = useHistory();
   return (
     <div className="header">
+      {/* Add Modal Here */}
       {/* Left - App title and Icon */}
       <div className="header__left">
         <InstagramIcon fontSize="inherit" className="header__leftIcon" />
