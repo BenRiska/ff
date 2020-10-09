@@ -7,7 +7,7 @@ function SidebarRow({ Icon, title, redirect, url }) {
   return (
     <div
       onClick={(e) => {
-        redirect ? (window.location.href = url) : history.push(`/${title}`);
+        redirect ? window.open(url) : history.push(`/${title}`);
       }}
       className="sidebarRow"
     >

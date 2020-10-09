@@ -2,22 +2,20 @@ import React from "react";
 import "./Item.css";
 import { Button } from "@material-ui/core";
 
-function Item() {
+function Item({ title, price, image, url }) {
   return (
     <div className="item">
       <div className="item__info">
-        <h2>T-Shirt</h2>
+        <h2>{title}</h2>
         <p>
           <small>£</small>
-          <strong>19.99</strong>
+          <strong>{price}</strong>
         </p>
-        <Button className="item__btn">Buy</Button>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <Button className="item__btn">Buy</Button>
+        </a>
       </div>
-      <img
-        className="item__image"
-        src="https://vangogh.teespring.com/v3/image/VdZ1hll1zMclR4c6cC3234Fb4iw/480/560.jpg"
-        alt="store item"
-      />
+      <img className="item__image" src={image} alt="store item" />
     </div>
   );
 }

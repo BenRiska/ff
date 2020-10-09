@@ -17,10 +17,19 @@
   font-size: 15px;
 }
 
+.item__info > p {
+  padding: 5px;
+}
+
+.item__info > a {
+  text-decoration: none;
+}
+
 .item__image {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   max-width: 300px;
+  max-height: 300px;
 }
 
 .item__btn {

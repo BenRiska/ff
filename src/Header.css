@@ -1,3 +1,7 @@
+.disabledIcon {
+  display: none !important;
+}
+
 .header {
   display: flex;
   padding: 10px 15px;
@@ -7,6 +11,38 @@
   background-color: white;
   z-index: 100;
   box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__modalForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__modalForm > h2 {
+  font-size: 30px;
+  padding: 10px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.header__modalForm > img {
+  border-radius: 999px;
+  width: 100px;
+  height: 100px;
+}
+
+.header__modalForm > button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f44336;
+  border: none;
+  color: white;
+  transition: all 1s ease;
+}
+
+.header__modalForm > button:hover {
+  background-color: #be0e01;
 }
 
 /* left header */
@@ -81,4 +117,47 @@
 
 .header__avatar > p {
   margin-left: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* burger nav */
+
+.header__burgerNav {
+  display: none;
+  align-items: center;
+}
+
+.header__dropdownNav {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navLink > .MuiSvgIcon-root {
+  font-size: xx-large;
+  color: #f44336;
+  margin-right: 5px;
+}
+
+.exit__btn {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  align-items: center;
+}
+
+.dropdown__close {
+  color: white;
+  margin-right: 10px;
 }

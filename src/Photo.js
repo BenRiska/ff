@@ -1,19 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Photo.css";
+import Modal from "@material-ui/core/Modal";
+import { makeStyles } from "@material-ui/core/styles";
 
-function Photo() {
+function Photo({ url, artist }) {
+  const [open, setOpen] = useState(false);
+  const [modalStyle] = useState(getModalStyle);
+  const classes = useStyles();
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <div className="photo">
+      <Modal open={open} onClose={handleClose}>
+        <div style={modalStyle} className={classes.paper}>
+          <div className="photo__modal">{url && <img src={url} alt="gallery item" />}</div>
+        </div>
+      </Modal>
       <div className="photo__info">
-        <h2>@user</h2>
-        <p>24/7/2020</p>
+        <h2>
+          <a href={`https://www.instagram.com/${artist}`} target="_blank" rel="noopener noreferrer">
+            @{artist && artist}
+          </a>
+        </h2>
       </div>
-      <img
-        className="photo__image"
-        src="https://scontent-lhr8-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/p640x640/120202384_389707365370521_5389801171743883244_n.jpg?_nc_ht=scontent-lhr8-1.cdninstagram.com&_nc_cat=109&_nc_ohc=fl9Re9C1z1YAX9w1EIJ&oh=05fb2a86f1a327176c5a48645f68675d&oe=5FA0F9B0"
-      />
+      {url && <img onClick={handleOpen} className="photo__image" src={url} alt="gallery item" />}
     </div>
   );
 }
 
 export default Photo;
+
+function getModalStyle() {
+  const top = 50;
+  const left = 50;
+
+  return {
+    top: `${top}%`,
+    left: `${left}%`,
+    transform: `translate(-${top}%, -${left}%)`,
+  };
+}
+
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    position: "absolute",
+    maxHeight: 800,
+    maxWidth: 1000,
+    outline: "none",
+    backgroundColor: "black",
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
+}));

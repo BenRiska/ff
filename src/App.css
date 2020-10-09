@@ -2,3 +2,41 @@
   background-color: #f1f2f5;
   min-height: 100vh;
 }
+
+@media only screen and (max-width: 1199px) {
+  .instagramTab {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .landingContent {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .header__center {
+    display: none;
+  }
+
+  .header__right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+  .header__burgerNav {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .landingContent__imageScroller {
+    max-width: 80vw;
+  }
+}

@@ -1,6 +1,11 @@
 .sidebar {
   flex: 0.3;
   padding: 25px 10px;
+  max-width: 320px;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sidebarRow:hover {

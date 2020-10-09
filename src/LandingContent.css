@@ -5,7 +5,7 @@
 }
 
 .landingContent__left {
-  flex: 0.6;
+  flex: 0.5;
   padding: 10px;
 }
 
@@ -15,11 +15,18 @@
   margin-bottom: 10px;
 }
 
+.landingContent__imageScroller {
+  overflow-x: scroll;
+  display: flex;
+  max-width: 400px;
+}
+
 .landingContent__galleryImage {
   object-fit: contain;
-  max-height: 500px;
+  max-width: 200px;
   display: block;
   border-radius: 20px;
+  margin-right: 10px;
 }
 
 .landingContent__leftContent > p,
@@ -29,13 +36,14 @@
 }
 
 .landingContent__right {
-  flex: 0.4;
+  flex: 0.5;
   padding: 10px;
 }
 
 .landingContent__rightContent {
   background-color: white;
   padding: 20px;
+  margin-top: 10px;
 }
 
 .landingContent__bannerTitle {
@@ -46,10 +54,10 @@
 }
 
 .landingContent__banner {
-  width: 100%;
+  max-width: 100%;
   max-height: 250px;
   border-radius: 20px;
-  margin: 10px 0;
+  margin-top: 10px;
   object-fit: contain;
 }
 
