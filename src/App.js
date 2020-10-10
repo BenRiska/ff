@@ -12,6 +12,7 @@ import { actionTypes } from "./reducer";
 function App() {
 
   const [state, dispatch] = useStateValue();
+  
 
   useEffect(() => {
     const authListener = () => {
@@ -25,7 +26,7 @@ function App() {
       });
     };
     authListener();
-  }, [dispatch]);
+  }, [dispatch, state]);
 
   return (
     <Router>

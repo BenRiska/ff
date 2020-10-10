@@ -4,7 +4,6 @@ import { Avatar } from "@material-ui/core";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import CollectionsIcon from "@material-ui/icons/Collections";
-
 import { useHistory } from "react-router-dom";
 import Modal from "@material-ui/core/Modal";
 import { makeStyles } from "@material-ui/core/styles";
