@@ -3,6 +3,7 @@
   flex-direction: column;
   max-width: 300px;
   background-color: white;
+  margin: 0 auto;
 }
 
 .item__info {

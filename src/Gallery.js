@@ -21,9 +21,10 @@ function Gallery() {
       <div className="gallery__column">
         <div className="gallery__photos">
           {images.map((image) => (
-            <Photo key={image.id} url={image.url} artist={image.artist} />
+            <Photo key={image.id} id={image.id} url={image.url} artist={image.artist} />
           ))}
         </div>
+        
       </div>
       <InstagramTab />
     </div>

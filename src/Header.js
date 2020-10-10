@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { Avatar, IconButton } from "@material-ui/core";
+import { Avatar } from "@material-ui/core";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import CollectionsIcon from "@material-ui/icons/Collections";
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-import MailIcon from "@material-ui/icons/Mail";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+
 import { useHistory } from "react-router-dom";
 import Modal from "@material-ui/core/Modal";
 import { makeStyles } from "@material-ui/core/styles";
@@ -104,7 +102,7 @@ function Header() {
         </i>
       </div>
       {/* Center - Main Page navigation */}
-      <div className="header__center">
+      {/* <div className="header__center">
         <div onClick={(e) => history.push("/store")} className="header__option">
           <StorefrontIcon fontSize="large" />
         </div>
@@ -114,7 +112,7 @@ function Header() {
         >
           <CollectionsIcon fontSize="large" />
         </div>
-      </div>
+      </div> */}
       {/* right - User Avatar, Sign In, Basket and Contact navigation */}
       <div className="header__right">
         <div className="header__avatar">
@@ -125,7 +123,7 @@ function Header() {
             <p onClick={logOut}>Sign out</p>
           )}
         </div>
-        <IconButton className="header__smallIcon disabledIcon">
+        {/* <IconButton className="header__smallIcon disabledIcon">
           <ShoppingBasketIcon />
         </IconButton>
         <IconButton className="header__smallIcon disabledIcon">
@@ -133,7 +131,7 @@ function Header() {
         </IconButton>
         <IconButton className="header__smallIcon disabledIcon">
           <ExpandMoreIcon />
-        </IconButton>
+        </IconButton> */}
       </div>
       <div className="header__burgerNav">
         <MenuIcon onClick={e => setNavOpen(true)} fontSize="large"/>

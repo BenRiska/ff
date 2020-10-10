@@ -23,15 +23,15 @@
   .header__right {
     display: none;
   }
+
+  .header__burgerNav {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .sidebar {
     display: none;
-  }
-
-  .header__burgerNav {
-    display: flex;
   }
 }
 
